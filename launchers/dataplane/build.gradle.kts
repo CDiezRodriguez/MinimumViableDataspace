@@ -20,6 +20,7 @@ plugins {
 
 dependencies {
     runtimeOnly(libs.edc.bom.dataplane)
+    runtimeOnly(libs.events.cloud.http)
 
     if (project.properties.getOrDefault("persistence", "false") == "true") {
         runtimeOnly(libs.edc.vault.hashicorp)
